@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gather Weather</title>
+    <!-- <link rel="stylesheet" href="weather.css"> -->
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./Video/27_24_08_19.mp4" type="video/mp4">
+          
+        </video>
+    </div>
+
+    <div class="mainContainer">
+        <div class="search">
+            <form class="searchBox">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="cityName" placeholder="Search your city...." />
+            </form>
+        </div>
+
+
+        <div class="mainInfo">
+            <h1 class="city"></h1>
+            <p class="datetime"></p>
+            <div class="data">
+                <p class="forecast"></p>
+                <div class="icon"></div>
+            </div>
+            <p class="temp"></p>
+            <div class="min_max">
+               <p class="min"></p>
+               <p class="max"></p>
+            </div>
+        </div>
+ 
+        <div class="extraInfo">
+            <div class="card" >
+                <i class="fa-solid fa-cloud"></i>
+                <div>
+                    <p>Approx Feel:</p>
+                    <p id="feel">15&#176F</p>
+                </div>                
+            </div>
+      
+
+        
+     
+            <div class="card"  >
+                <i class="fa-solid fa-cloud"></i>
+                <div>
+                    <p>Wind:</p>
+                    <p id="wind">15&#176C</p>
+                </div>                
+            </div>
+        
+
+     
+            <div class="card" >
+                <i class="fa-brands fa-wpressr"></i>
+                <div>
+                    <p>Humidity:</p>
+                    <p id="humidity">15 Pa</p>
+                </div>                
+            </div>
+      
+
+          
+       
+            <div class="card" >
+                <i class="fa-brands fa-wpressr"></i>
+                <div>
+                    <p>Pressure:</p>
+                    <p id="pressure">15 Pa</p>
+                </div>                
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="weather.js"></script>
+</body>
+</html>
